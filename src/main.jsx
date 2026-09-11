@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="app">
       <nav className="nav">
-        <a className="logo" href="#home">M<span>.</span></a>
+        <a className="logo" href="#home">Mohamed</a>
         <div className={`links ${open ? "show" : ""}`}>
           {["Home", "About", "Skills", "Projects", "Contact"].map((x) => (
             <a key={x} href={"#" + x.toLowerCase()} onClick={() => setOpen(false)}>{x}</a>
@@ -30,8 +30,8 @@ function App() {
         <section id="home" className="hero section">
           <div className="hero-copy">
             <p className="eyebrow"><span></span> Available for projects</p>
-            <h1>I build clean<br/><em>digital experiences.</em></h1>
-            <p className="lead">I'm Mohamed, a Front-End Developer and Shopify Designer. I turn ideas into fast, responsive and professional websites.</p>
+            <h1 className="hero-title">Hi, I'm <em>Mohamed.</em><br/><span>Front-End Developer.</span></h1>
+            <p className="lead">I build fast, responsive and professional websites using React.jsx, JavaScript, HTML, CSS and Shopify.</p>
             <div className="actions">
               <a className="button dark" href="#projects">View my work <ArrowUpRight size={18}/></a>
               <a className="button light" href="#contact">Contact me</a>
